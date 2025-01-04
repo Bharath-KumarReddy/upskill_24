@@ -12,11 +12,11 @@ const CartProvider = ({children}) => {
 
      const [cart, setCart] = useState([]);
       const [totalPrice, setTotalPrice] = useState(0);
-      const [showPaymentForm, setShowPaymentForm] = useState(false);
+      
 
 
     return  (
-         <cartContext.Provider value={{cart,setCart,totalPrice ,setTotalPrice,showPaymentForm,setShowPaymentForm}}>
+         <cartContext.Provider value={{cart,setCart,totalPrice ,setTotalPrice}}>
              {children}
          </cartContext.Provider>
     )
